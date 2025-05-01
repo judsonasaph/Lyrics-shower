@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kandaangi Kandaangi - Lyrics Shower</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 40px 30px;
+      border-radius: 20px;
+      max-width: 800px;
+      width: 90%;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+      margin: 40px auto;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h3, h4 {
+      font-weight: 300;
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+
+    .lyrics {
+      margin-top: 30px;
+    }
+
+    .lyrics-line {
+      font-size: 1.3em;
+      margin: 10px 0;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .lyrics-line:nth-child(n) {
+      animation-delay: calc(0.05s * var(--i));
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background-color: rgba(255,255,255,0.2);
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    a:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Kandaangi Kandaangi</h1>
+    <h3>Movie: Jilla</h3>
+    <h3>Music: D. Imman</h3>
+    <h4>Singer: Vijay</h4>
+
+ 
+  <div class="btns">
+    <button onclick="showLyrics('tamil')">Tamil</button>
+    <button onclick="showLyrics('english')">English</button>
+  </div>
+
+  <div class="lyrics-container">
+    <div id="tamil" class="lyrics">
+      <p>ஆண் : கண்டாங்கி கண்டாங்கி</p>
+      <p>கட்டி வந்த பொண்ணு</p>
+      <p>கண்டாலே கிறுகேத்தும்</p>
+      <p>கஞ்சா வச்ச கண்ணு</p>
+      <p>அந்த கண்ணுக்கு அஞ்சுலட்சம் தாரேன்டி</p>
+      <p>அந்த நெஞ்சுக்கு சொத்தெழுதி தாரேன்டி</p>
+      <p>முத்தம் தாியா…ஒஹோ…</p>
+      <p>பெண் : கண்டாங்கி கண்டாங்கி</p>
+      <p>கட்டி வந்த பொண்ணு</p>
+      <p>கண்டாலே கிறுகேத்தும்</p>
+      <p>கஞ்சா வச்ச கண்ணு</p>
+      <p>இந்த கண்ணுக்கு அஞ்சுலட்சம் போதாது</p>
+      <p>இந்த நெஞ்சுக்கு சொத்தெழுதி தீராது</p>
+      <p>தள்ளி நில்லையா…</p>
+      <p>ஆண் : அடி உன் வீடு தல்லாகுளம்</p>
+      <p>என் வீடு தெப்பக்குளம்</p>
+      <p>நீரோடு நீரு சேரட்டுமே</p>
+      <p>ஆண் : அழகா் மலைகோயில் யானை வந்து</p>
+      <p>அல்வாவ திண்பது போல என் ஆச உன்ன திண்ணட்டுமே</p>
+      <p>ஆண் : ஒத்தைக்கொத்த அழைக்கும் அழகு</p>
+      <p>ஒத்த பக்கம் ஒதுங்கும் பொழுது</p>
+      <p>புத்திக்குள்ள அாிக்குது</p>
+      <p>நெத்திக்குள்ள துடிக்குது</p>
+      <p>பெண் : வெள்ள முழி வெளிய தொிய</p>
+      <p>கள்ள முழி முழிக்கும் பொழுது</p>
+      <p>என் உசுரு ஒடுங்குது</p>
+      <p>ஈர கொழ நடுங்குது</p>
+      <p>ஆண் : சின்ன சின்ன பொய்யும் பேசுற</p>
+      <p>ஜில்லுனுதான் சூடும் ஏத்துற</p>
+      <p>பெண் : நீ பாத்தாக்க தென்னமட்ட</p>
+      <p>பாஞ்சாக்க தேகம் கட்ட</p>
+      <p>பாசாங்கு வேணாம் சுந்தரரே</p>
+      <p>ஆண் : நீ தேயாத நாட்டு கட்ட</p>
+      <p>தொியாம மாட்டிக்கிட்டேன்</p>
+      <p>என் ராசி என்றும் மன்மதனே</p>
+      <p>ஆண் : கண்ணுக்குள்ள இறங்கி இறங்கி</p>
+      <p>நெஞ்சுக்குள்ள உறங்கி உறங்கி</p>
+      <p>என் உசுர பறிக்கிற</p>
+      <p>என்ன செய்ய நினைக்குற</p>
+      <p>பெண் : அம்பு விட்டு ஆள அடிக்கிற</p>
+      <p>தும்பு விட்டு வால புடிக்கிற</p>
+      <p>ஆண் : தாலி இல்லாத சம்சாரமே</p>
+      <p>தடையில்லா மின்சாரமே</p>
+      <p>விளக்கேத்த வாடி வெண்ணிலவே</p>
+      <p>பெண் : எந்தன் மாா்போட சந்தனமே</p>
+      <p>மாராப்பு வைபோகமே</p>
+      <p>முத்தாட வாயா முன்னிரவே</p>
+      <p>ஆண் : கண்டாங்கி கண்டாங்கி</p>
+      <p>கட்டி வந்த பொண்ணு</p>
+      <p>கண்டாலே கிறுகேத்தும்</p>
+      <p>கஞ்சா வச்ச கண்ணு</p>
+      <p>பெண் : இந்த கண்ணுக்கு</p>
+      <p>அஞ்சுலட்சம் போதாது</p>
+      <p>இந்த நெஞ்சுக்கு</p>
+      <p>சொத்தெழுதி தீராது</p>
+      <p>தள்ளி நில்லையா…</p>
+      <p>பெண் : கண்டாங்கி கண்டாங்கி</p>
+      <p>ஆண் : ஹ்ம்ம் ஹ்ம்ம் ………</p>
+      <p>பெண் : கண்டாலே கிறுகேத்தும்</p>
+      <p>ஆண் : கஞ்சா வச்ச கண்ணு</p>
+    </div>
+
+    <div id="english" class="lyrics" style="display:none;">
+      <p>Male : Kandaangi kandaangi katti vantha ponnu</p>
+      <p>Kandaalae kirukethum ganja vecha kannu</p>
+      <p>Andha kannukku anju latcham thaaren di</p>
+      <p>Antha nenjuku sothu ezhuthi thaarendi</p>
+      <p>Mutham thariyaa..ohh..</p>
+      <p>Female : Kandaangi kandaangi katti vantha ponnu</p>
+      <p>Kandaalae kirukethum ganja vecha kannu</p>
+      <p>Andha kannukku anju latcham porathu</p>
+      <p>Antha nenjuku sothu ezhuthi therathu</p>
+      <p>Thalli nillaiya..</p>
+      <p>Male : Adi un veedu thallakulam</p>
+      <p>En veedu teppakulam</p>
+      <p>Neerodu neeru seratumae</p>
+      <p>Male : Azhagar malai koyil yaana vanthu</p>
+      <p>Halwa va thinbathu pol</p>
+      <p>En aasa unna thinnatumae</p>
+      <p>Othaikkotha Azhaikkum azhagu</p>
+      <p>Otha pakkam odhungum pozhudhu</p>
+      <p>Budhikulla arikuthu</p>
+      <p>Nethikulla thudikuthu</p>
+      <p>Female : Vella muzhi veliya theriya</p>
+      <p>Kalla muzhi muzhikkum pozhuthu</p>
+      <p>En usuru odunguthu</p>
+      <p>Eera kola nadunguthu</p>
+      <p>Male : Chinna chinna poiyum pesura</p>
+      <p>Chillunu thaan sudum yethura</p>
+      <p>Female : Nee paathaaka thenna matta</p>
+      <p>Paanjakka thegam katta</p>
+      <p>Paasangu venam sundhararae</p>
+      <p>Male : Nee theyaatha naatu katta</p>
+      <p>Theriyama maatikitten</p>
+      <p>En raasi endrum manmathanae</p>
+      <p>Male : Kannukulla erangi erangi</p>
+      <p>Nenjukulla orangi orangi</p>
+      <p>En usura parikira</p>
+      <p>Enna seiya nenaikura</p>
+      <p>Female : Ambu vittu aala adikira</p>
+      <p>Thumbu vittu vaala pudikira</p>
+      <p>Male : Thaali ilaatha samsaaramae</p>
+      <p>Thadai laa minsaaramae</p>
+      <p>Vilaketha vaadi vennilavae</p>
+      <p>Female : Enthan maarboda santhanamae</p>
+      <p>Maaraapu vaibogamae</p>
+      <p>Muthaada vaaya munniravae</p>
+      <p>Male : Kandaangi kandaangi katti vantha ponnu</p>
+      <p>Kandaalae kirukethum ganja vecha kannu</p>
+      <p>Female : Andha kannukku anju latcham porathu</p>
+      <p>Antha nenjuku sothu ezhuthi therathu</p>
+      <p>Thalli nillaiya..</p>
+      <p>Female : Kandaangi kandaangi</p>
+      <p>Male : Hmm hmm hmm</p>
+      <p>Female : Kandaalae kirukethum</p>
+      <p>Male : Ganja vecha kannu</p>
+    </div>
+  </div>
+
+  
+
+  <script>
+    function showLyrics(lang) {
+      document.getElementById('tamil').style.display = (lang === 'tamil') ? 'block' : 'none';
+      document.getElementById('english').style.display = (lang === 'english') ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
+
+<!-- Tamil Lyrics -->
+<
+<script>
+  let isTamilVisible = true;
+
+  document.getElementById('toggleButton').addEventListener('click', () => {
+    const tamilLyrics = document.getElementById('tamilLyrics');
+    const englishLyrics = document.getElementById('englishLyrics');
+    
+    if (isTamilVisible) {
+      tamilLyrics.style.display = 'none'; // Hide Tamil lyrics
+      englishLyrics.style.display = 'block'; // Show English lyrics
+      document.getElementById('toggleButton').innerText = 'Show Tamil Lyrics'; // Change button text
+    } else {
+      tamilLyrics.style.display = 'block'; // Show Tamil lyrics
+      englishLyrics.style.display = 'none'; // Hide English lyrics
+      document.getElementById('toggleButton').innerText = 'Show English Lyrics'; // Change button text
+    }
+
+    isTamilVisible = !isTamilVisible; // Toggle the visibility flag
+  });
+</script>
+
+    <a href="https://youtu.be/A64oFRutkeI?si=-O1Uhcfg8BtDuSf2" target="_blank">▶ Watch on YouTube</a>
+    <h1>Kandaangi Kandaangi – Jilla </h1>
+<p>Artists: D.Imman,Vijay,Shreya goshal</p>
+
+<div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/A64oFRutkeI" 
+    title="Kandaangi Kandaangi – Song" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div id="lyrics">
+  <!-- Lyrics content here -->
+
+
+<section class="more-songs">
+  <h2>More Songs from <span class="highlight">Jilla</span></h2>
+  <ul>
+    <li><a href="https://youtu.be/A64oFRutkeI?si=1XKpF7EOkj_D96oF" target="_blank">Kandaangi Kandaangi – Vijay, Shreya Ghoshal</a></li>
+    <li><a href="https://youtu.be/GOFcPxHkBpw?si=z_8hm1-DHvRdaAGh" target="_blank">Verasa Pogayile – D. Imman</a></li>
+    <li><a href="https://youtu.be/Ny_TvBRp2M0?si=PgXIiLQwUiaEUyfx" target="_blank">Jingunamani – D. Imman, Poornima</a></li>
+    <li><a href="https://youtu.be/ULM-mBVCi0A?si=PumpwpFl_dKWPe3z" target="_blank">Pattu Onnu – D. Imman</a></li>
+    <li><a href="https://youtu.be/qFYcMSQcOvQ?si=8VjobYuBQPGMdF0p" target="_blank">Yeppa Maama Treatu – D. Imman</a></li>
+  </ul>
+</section>
